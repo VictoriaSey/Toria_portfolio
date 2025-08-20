@@ -1,0 +1,220 @@
+* ------------ Global Styles ------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: 'Segoe UI', Tahoma, sans-serif;
+line-height: 1.6;
+background: #f7f9fc;
+color: #333;
+}
+/* ------------ Navigation ------------ */
+nav {
+background: #222;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+nav ul {
+display: flex;
+justify-content: center;
+list-style: none;
+}
+nav ul li {
+margin: 0 15px;
+}
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+padding: 15px 0;
+display: inline-block;
+transition: color 0.3s;
+}
+nav ul li a:hover {
+color: #00bcd4;
+}
+/* ------------ Hero Section ------------ */
+#home {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
+text-align: center;
+background: linear-gradient(to right, #00bcd4, #4cafef);
+color: #fff;
+}
+.hero-content h1 {
+font-size: 3rem;
+margin-bottom: 10px;
+}
+.hero-content p {
+font-size: 1.2rem;
+margin-bottom: 25px;
+}
+.hero-content a {
+background: #fff;
+color: #00bcd4;
+padding: 12px 25px;
+border-radius: 30px;
+font-weight: bold;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.hero-content a:hover {
+background: #00bcd4;
+color: #fff;
+}
+/* ------------ Section Headings ------------ */
+section {
+padding: 50px 15%;
+}
+section h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+text-transform: uppercase;
+text-align: center;
+color: #222;
+position: relative;
+}
+section h2::after {
+content: '';
+display: block;
+margin: auto;
+width: 50px;
+height: 3px;
+background: #00bcd4;
+margin-top: 8px;
+}
+/* ------------ About Section ------------ */
+#about {
+text-align: center;
+}
+#about img {
+border-radius: 50%;
+margin-bottom: 20px;
+border: 4px solid #00bcd4;
+}
+/* ------------ Skills Section ------------ */
+#skills ul {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+gap: 20px;
+list-style: none;
+text-align: center;
+margin-top: 20px;
+}
+#skills li {
+background: #fff;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+transition: transform 0.3s ease;
+}
+#skills li:hover {
+transform: translateY(-5px);
+}
+/* ------------ Projects Section ------------ */
+#projects div {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+#projects div > div {
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+#projects div > div:hover {
+transform: scale(1.03);
+}
+#projects a {
+color: #00bcd4;
+font-weight: bold;
+text-decoration: none;
+}
+/* ------------ Experience Section ------------ */
+#experience ul {
+list-style: none;
+margin-top: 20px;
+}
+#experience li {
+padding: 10px 0;
+border-bottom: 1px solid #ddd;
+}
+#experience strong {
+color: #00bcd4;
+}
+/* ------------ Testimonials Section ------------ */
+#testimonials blockquote {
+font-style: italic;
+background: #fff;
+padding: 25px;
+border-left: 5px solid #00bcd4;
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+/* ------------ Contact Section ------------ */
+#contact form {
+max-width: 500px;
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+#contact input,
+#contact textarea {
+padding: 10px;
+margin: 8px 0;
+border: 2px solid #ccc;
+border-radius: 5px;
+font-size: 1rem;
+}
+#contact button {
+background: #00bcd4;
+border: none;
+padding: 12px;
+color: #fff;
+border-radius: 30px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+#contact button:hover {
+background: #0195a9;
+}
+/* Contact Icons */
+#contact .social-icons {
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+#contact .social-icons a {
+margin: 0 10px;
+font-size: 2rem;
+color: #00bcd4;
+transition: transform 0.3s ease;
+}
+#contact .social-icons a.gmail {
+color: #d44638;
+}
+#contact .social-icons a.linkedin {
+color: #0077b5;
+}
+#contact .social-icons a:hover {
+transform: scale(1.1);
+}
+/* ------------ Footer ------------ */
+footer {
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+background: #222;
+color: #fff;
+}

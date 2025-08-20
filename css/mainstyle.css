@@ -339,10 +339,10 @@ background-color: #023e8a;
 }
 /* Email button specifically */
 #contact .email {
-background-color: #28a745;
+background-color: orangered;
 }
 #contact .email:hover {
-background-color: #1e7e34;
+background-color: orangered;
 }
 /* LinkedIn button specifically */
 #contact .LinkedIn {
