@@ -338,8 +338,16 @@ transition: background-color 0.3s ease;
 background-color: #023e8a;
 }
 /* Email button specifically */
-#contact .email {
+
+.contact-button {
 background-color: orangered;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+#contact .email {
+color: white;
 }
 #contact .email:hover {
 background-color: orangered;
