@@ -54,7 +54,7 @@ nav a:hover {
 
 /* ===== HERO SECTION (HOME) ===== */
 #home {
-    background: url("../assets/techgirl.png") no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/techgirl.png") no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 150px 20px 100px;
