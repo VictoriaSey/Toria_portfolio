@@ -1,135 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="css/mainstyle.css">
-     <!-- =====BOX ICONS ====== -->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Victoria Ewusiwaa Wilson-Sey | Data Analyst Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Wilson-Sey | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav id="Details">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li> <a href="https://drive.google.com/file/d/1-Awi_oRMNNsa4sQ7KSGCJezcNnd3qjLw/view?usp=sharing">Resume</a>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Stylish Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <h1>Hi! <br> I’m <span style="color:#00d4ff;">Victoria Ewusiwaa Wilson-Sey</span></h1>
-        <p>Quantitative Data Analyst | Storytelling with Data</p>
-        <a href="#contact">Hire Me</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="./assets/VickySey.jpg" alt="VickySey"
-            style="width: 175px; border: radius 50%; image-resolution: 100%;">
-        <p>
-            Analytical and detail-oriented Quantitative Data Analyst with an expertise in datacollection,
-statistical analysis, and visualization. Skilled in SPSS, STATA, Excel, and Kobo Toolbox
-withgrowing proficiency in Python for data manipulation and automation. Proven ability to managelarge
-datasets, extract insights, and support decision-making in public health and business research.Adept at
-applying consumer insights, market research methodologies, and data-drivenstrategies to deliver actionable
-recommendations.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills & Tools</h2>
-        <ul>
-            <li>SPSS</li>
-            <li>STATA</li>
-            <li>Excel</li>
-            <li>Kobo Toolbox</li>
-            <li>Python (in progress)</li>
-            <li>Data Collection</li>
-            <li>Survey Design</li>
-            <li>Data Visualization</li>
-            <li>Statistical Modeling</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Selected Projects</h2>
-        <div>
-            <div>
-                <h3>Health Survey Design</h3>
-                <p>Designed and implemented a structured quantitative health survey to collect critical data on public health indicators. The project involved creating a comprehensive questionnaire, defining the sampling methodology, and deploying digital data collection tools like Kobo Toolbox to ensure high data quality and integrity from the field.</p>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">VWS</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Victoria_Ewusiwaa_Wilson-Sey_CV.pdf" download>Resume</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                </label>
             </div>
-            <div>
-                <h3>Portfolio Website</h3>
-                <p>Designed and developed a responsive personal portfolio website to showcase professional experience, projects, and skills. Utilized modern web technologies (HTML, CSS, JavaScript) and a user-focused design approach to ensure intuitive navigation, visual appeal, and accessibility across devices.</p>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="hero">
+            <h1>Victoria Ewusiwaa Wilson-Sey</h1>
+            <p class="subtitle">Junior Web Developer & Data-Driven Problem Solver</p>
+            <div id="ai-bio-container">
+                <p id="ai-bio-text">
+                    Proactive developer with expertise in Python (FastAPI), MongoDB, HTML, and CSS. Experienced in creating APIs, websites, and data-driven solutions. Click the button for a unique AI-generated bio.
+                </p>
             </div>
-            <div>
-                <h3>HIV Program Infographic  (Ghana AIDS Commission)</h3>
-                <p>Designed and developed a series of data-driven infographics to communicate key outcomes of HIV prevention and treatment programs. This project involved translating complex statistical data into clear, visually compelling graphics to improve understanding and engagement for both stakeholders and the general public.</p>
+            <div class="hero-buttons">
+                <button id="ai-generate-bio-btn" class="btn"><i class="fas fa-magic"></i> Generate AI Bio</button>
+                <a href="projects.html" class="btn btn-secondary">View My Work</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-container">
+        <div id="chatbot-toggle"><i class="fas fa-robot"></i></div>
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                <h3>AI Assistant</h3>
+                <button id="chatbot-close">&times;</button>
+            </div>
+            <div id="chatbot-body"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about my skills...">
+                <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>D&D Statistical Company</strong> – Enumerator / Research Assistant, 2024-present</li>
-            <li><strong>Ghana AIDS Commission</strong> – Public Health Intern, 2024</li>
-            <li><strong>GOIL Limited</strong> – National Service, 2019-2020</li>
-            <li><strong>Self-employed Tutor</strong> – Mathematics & Science, 2022-present</li>
-        </ul>
-    </section>
+    <footer class="animate-on-scroll">
+        <p>&copy; 2025 Victoria Wilson-Sey</p>
+    </footer>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <blockquote>
-            “Victoria’s analytical insights transformed our data collection, improving accuracy and outcomes.” – Project
-            Lead, D&D Statistical Company
-        </blockquote>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/xwpqdddb" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-
-            <button><a type="submit">Send Message></a></button>
-        </form>
-    </section>
-    <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Victoria Wilson-sey</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/victoria-wilson-sey?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.instagram.com/motiv8_vews?igsh=ZXl3aWZpNmJ3cGQw" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/VictoriaSey" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                <a href="https://wa.me/233207971581" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; 2025 by Victoria Wilson-sey. All rights reserved</p>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

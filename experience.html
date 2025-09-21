@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Victoria Wilson-Sey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">VWS</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Victoria_Ewusiwaa_Wilson-Sey_CV.pdf" download>Resume</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Trainee @ MEST Africa</h3>
+                    <p class="timeline-date">August 2025 - Present</p>
+                    <ul>
+                        <li>Developed and deployed 2 APIs (e-commerce and event manager) using FastAPI in Python within 3 weeks.</li>
+                        <li>Collaborated in a team of 5 to design and build Agrokasa, an agricultural advertisement management API.</li>
+                        <li>Optimized database performance by implementing MongoDB, reducing data retrieval time by approximately 20%.</li>
+                        <li>Built and styled 2 websites (portfolio and home tuition) using HTML and CSS, both deployed online.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Enumerator / Research Assistant @ D&D Statistical Company</h3>
+                    <p class="timeline-date">March 2024 - Present</p>
+                    <ul>
+                        <li>Designed and administered structured surveys to collect quantitative data from 500+ participants.</li>
+                        <li>Digitized field data with Kobo Toolbox, reducing data entry errors by 30%.</li>
+                        <li>Performed real-time data validation, increasing accuracy of collected datasets by 25%.</li>
+                    </ul>
+                </div>
+                 <div class="timeline-item">
+                    <h3>Home Tutor (Mathematics & Science) @ Self-Employed</h3>
+                    <p class="timeline-date">February 2022 - Present</p>
+                    <ul>
+                        <li>Taught 10 students in mathematics and science, improving average performance by 20% over a 6-month period.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>National Service Personnel @ GOIL Limited</h3>
+                    <p class="timeline-date">September 2019 - September 2020</p>
+                    <ul>
+                        <li>Produced sales analytics reports in Excel that identified key seasonal trends for demand forecasting.</li>
+                        <li>Analyzed competitor performance data, informing marketing strategies that increased station revenue by 10%.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Education & Certifications</h2>
+            <div class="timeline">
+                <div class="timeline-item"><h3>Python Training @ MEST Africa</h3><p class="timeline-date">Expected December 2025</p></div>
+                <div class="timeline-item"><h3>Master of Public Health @ University of Ghana</h3><p class="timeline-date">Expected December 2025</p></div>
+                <div class="timeline-item"><h3>Bachelor of Science in Natural Resources Management @ KNUST</h3><p class="timeline-date">Graduated June 2019</p></div>
+                <div class="timeline-item"><h3>Introduction to Functions in Python @ DataCamp</h3><p class="timeline-date">August 2025</p></div>
+                <div class="timeline-item"><h3>Introduction to Python for Developers @ DataCamp</h3><p class="timeline-date">August 2025</p></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot-container">
+        <div id="chatbot-toggle"><i class="fas fa-robot"></i></div>
+        <div id="chatbot-window">
+            <div id="chatbot-header"><h3>AI Assistant</h3><button id="chatbot-close">&times;</button></div>
+            <div id="chatbot-body"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about my skills..."><button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="animate-on-scroll">
+        <p>&copy; 2025 Victoria Wilson-Sey</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

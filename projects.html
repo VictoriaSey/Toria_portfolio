@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Victoria Wilson-Sey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">VWS</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Victoria_Ewusiwaa_Wilson-Sey_CV.pdf" download>Resume</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Countries Explorer API</h3>
+                    <p>A backend API built with Python and FastAPI to serve detailed information about countries worldwide. It provides endpoints for retrieving data efficiently.</p>
+                    <div class="tech-tags"><span>Python</span> <span>FastAPI</span></div>
+                    <div class="project-links"><a href="https://github.com/VictoriaSey/countries_explorer_API" target="_blank" class="btn">View on GitHub <i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>My personal portfolio site, built with clean HTML, CSS, and interactive JavaScript. It showcases my skills, experience, and projects in a responsive design.</p>
+                    <div class="tech-tags"><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></div>
+                    <div class="project-links"><a href="https://github.com/VictoriaSey/Toria_portfolio" target="_blank" class="btn">View on GitHub <i class="fab fa-github"></i></a></div>
+                </div>
+                <div class="project-card">
+                    <h3>Home Tuition Website</h3>
+                    <p>A responsive and user-friendly landing page for a home tuition service, designed and styled purely with HTML and CSS and deployed via Netlify.</p>
+                    <div class="tech-tags"><span>HTML5</span> <span>CSS3</span></div>
+                    <div class="project-links"><a href="https://kheprieduprep.netlify.app/" target="_blank" class="btn">View Live Site <i class="fas fa-external-link-alt"></i></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot-container">
+        <div id="chatbot-toggle"><i class="fas fa-robot"></i></div>
+        <div id="chatbot-window">
+            <div id="chatbot-header"><h3>AI Assistant</h3><button id="chatbot-close">&times;</button></div>
+            <div id="chatbot-body"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about my skills..."><button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="animate-on-scroll">
+        <p>&copy; 2025 Victoria Wilson-Sey</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
